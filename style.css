@@ -1,0 +1,225 @@
+
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+
+
+
+body {
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.paticka {
+	text-align: center;
+	font-size: 14px;
+	color: silver;
+}
+
+.paticka a {
+	color: silver;
+}
+
+
+
+
+
+.hlavni-recept {
+	
+	min-height: 200px;
+	border-bottom: 1px solid white;
+}
+.recept {
+	
+	min-height: 90px;
+	border-bottom: 1px solid white;
+}
+
+
+
+@media (min-width: 480px) {
+	.hlavni-recept {
+		
+		min-height: 250px;
+	}
+
+	.recepty {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.recept:nth-child(2n+1) {
+		
+		border-right: 1px solid white;
+	}
+
+	.recept {
+		
+		flex: 0 0 50%;
+		min-height: 150px;
+	}
+
+
+
+}
+
+
+@media (min-width: 860px) {
+
+	.doporucujeme {
+		display: flex;
+	}
+
+	.hlavni-recept {
+		
+		flex: 1 0 33.33333%;
+		border-right: 1px solid white;
+	}
+
+	.recepty {
+		
+		flex: 1 0 66.66666%;
+	}
+
+	.recept {
+		
+		min-height: 200px;
+	}
+}
+
+
+/* umístění textu  */
+.hlavni-recept,
+.recept {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.recept-meta {
+	
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+@media (min-width: 480px) {
+	.hlavni-recept,
+	.recept {
+		padding: 20px;
+	}
+}
+
+
+
+
+
+.recept-nazev {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	font-weight: 800;
+	color: white;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.recept-meta {
+	font-size: 14px;
+	font-weight: 400;
+	color: white;
+}
+
+.hlavni-recept .recept-nazev {
+	font-size: 28px;
+}
+
+.recept .recept-nazev {
+	font-size: 18px;
+}
+
+/* tablet - větší nadpisy */
+@media (min-width: 480px) {
+	.hlavni-recept .recept-nazev {
+		font-size: 36px;
+	}
+
+	.recept .recept-nazev {
+		font-size: 22px;
+	}
+}
+
+/* počítač - ještě větší nadpisy */
+@media (min-width: 860px) {
+	.hlavni-recept .recept-nazev {
+		font-size: 48px;
+	}
+
+	.recept .recept-nazev {
+		font-size: 28px;
+	}
+}
+
+
+/* obrázky na pozadí jednotlivých receptů */
+
+.hlavni-recept,
+.recept {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hlavni-recept {
+	
+	background-image:
+		linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('images/salat.jpg');
+}
+
+.hlavni-recept:hover {
+	
+	background-image:
+		url('images/salat.jpg');
+}
+
+
+.recept2 {
+	background-image:
+		linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('images/chlebicek.jpg');
+}
+.recept2:hover {
+	background-image:
+		url('images/chlebicek.jpg');
+}
+
+.recept3 {
+	background-image:
+		linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('images/tacos.jpg');
+}
+.recept3:hover {
+	background-image:
+		url('images/tacos.jpg');
+}
+
+.recept4 {
+	background-image:
+		linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('images/cizrna.jpg');
+}
+.recept4:hover {
+	background-image:
+		url('images/cizrna.jpg');
+}
+
+.recept5 {
+	background-image:
+		linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('images/burger.jpg');
+}
+.recept5:hover {
+	background-image:
+		url('images/burger.jpg');
+}
